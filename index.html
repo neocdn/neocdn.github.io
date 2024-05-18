@@ -1,76 +1,75 @@
-<!DOCTYPE html>
+
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="bubble.png">
-    <title>NeoBoy's Personal WEB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo's website</title>
     <style>
-        <link rel="stylesheet" type="text/css" href="style.css">
         body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('windows7_background.jpg'); /* Replace 'windows7_background.jpg' with your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #c0c0c0;
-            color: #000;
         }
-        header {
-            background-color: #5a5a5a;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #888;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 20px;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #5a5a5a;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .window {
-            background-color: #fff;
-            border: 1px solid #5a5a5a;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            padding: 10px;
-            margin: 10px auto;
+        
+        .container {
             max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* To prevent overflow of content */
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+            display: inline-block;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f1f1f1;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a:hover {
+            background-color: #e0e0e0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to NeoBoy's Website</h1>
-    </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="contact">Contact</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <section>
-        <div class="window">
-            <h2>Hello... EPIC PEOPLE!</h2>
-            <p>Welcome to my website, there's alot of shit that you can do here</p>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2024 Neo. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <h1>Hello EPIC PEOPLE! Welcome to my website!</h1>
+        <p>There is alot of shit that you can do here</p>
+        <p>Feel free to explore this madness!</p>
+    </div>
 </body>
-</html>	
+</html>
