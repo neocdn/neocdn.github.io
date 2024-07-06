@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Removal of Elish Participate</title>
+    <title>Removal of Elish</title>
     <script>
         function addName() {
             var name = document.getElementById("nameInput").value;
+            if (name) {
+                var list = document.getElementById("memberList");
+                var listItem = document.createElement("li");
+                listItem.textContent = name;
+                list.appendChild(listItem);
+
+                // Save to localStorage
+                var currentList = JSON.parse(localStorage.getItem("members")) || [];
+                currentList.push(name);
+                localStorage.setItem("members", JSON.stringify(currentList));
+
+                document.getElementById("nameInput").value = "";
+            }
+        }
+
+        function loadNames() {
+            var currentList = JSON.parse(localStorage.getItem("members")) || [];
             var list = document.getElementById("memberList");
-            var listItem = document.createElement("li");
-            listItem.textContent = name;
-            list.appendChild(listItem);
-            document.getElementById("nameInput").value = "";
+            currentList.forEach(function(name) {
+                var listItem = document.createElement("li");
+                listItem.textContent = name;
+                list.appendChild(listItem);
+            });
+        }
+
+        window.onload = function() {
+            loadNames();
         }
     </script>
 </head>
@@ -22,3 +44,4 @@
     </ul>
 </body>
 </html>
+
