@@ -3,7 +3,7 @@
 session_start();
 
 // Dummy credentials (replace this with your actual authentication logic)
-$valid_username = "neo";
+$valid_username = "aaneo@kickthebuddy.ca";
 $valid_password = "0fb8s819a0k20z84";
 
 // Check if the form is submitted
