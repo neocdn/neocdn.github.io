@@ -1,3 +1,2 @@
-# neo6942.github.io
-
+# Neo's website of Epicness
 My website
