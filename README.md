@@ -1,2 +1,2 @@
-# Neo's website of Epicness
-My website
+# Neo Corporations website
+The site for neo corps
