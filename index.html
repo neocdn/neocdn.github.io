@@ -21,3 +21,10 @@
     </div>
 </body>
 </html>
+
+<script>
+if (window.location.href.includes('.html')) {
+  const cleanUrl = window.location.href.replace('.html', '');
+  window.history.replaceState({}, document.title, cleanUrl);
+}
+</script>
