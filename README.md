@@ -1,2 +1,2 @@
 # website
-self-explaintory
+website
